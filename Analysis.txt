@@ -1,4 +1,15 @@
+
+
+
+
 for min_moves: use a sliding window of size n, assume there are count nums in this window, then min_moves = min(min_moves, n - count)
-edge case: if count == n - 1 && nums[end] - nums[start] + 1 == n - 1(means the only hole is not at the middle of the window, but at end point of left side or right side), then we need at least 2 moves, so min_moves = min(min_moves, n - count).
+edge case: if count == n - 1 && nums[end] - nums[start] + 1 == n - 1(means the only hole is not at the middle of the window, 
+but at end point of left side or right side), then we need at least 2 moves, so min_moves = min(min_moves, n - count).
 If the hole is at the middle of window, only one move needed.
 for max_moves: holes between nums[1] and nums[n - 2] + max(holes between nums[n - 1] and nums[n - 2], holes between nums[1] and nums[0])
+
+
+
+
+
+
